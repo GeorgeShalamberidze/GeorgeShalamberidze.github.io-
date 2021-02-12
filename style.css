@@ -5,13 +5,14 @@
 }
 
 body{
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar{
     position: fixed;
     border-right: 5px solid gray;
-    width: 18%;
+    min-width: 18%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -19,13 +20,12 @@ body{
 
 #main-doc{
     margin: 0 auto;
-    width: 80%;
+    max-width: 70%;
     float: right;
 }
 
 
 article li{
-    list-style: n;
     margin: 25px 50px;
 }
 
@@ -36,7 +36,7 @@ article li{
     line-height: 100px;
 }
 
-#navbar li{
+#navbar a li{
     width: 100%;
     border: 1px solid gray;
     text-decoration: none;
@@ -47,7 +47,7 @@ article li{
     margin: 20px;
 }
 
-#navbar li a{
+#navbar a{
     text-decoration: none;
     color: black;
 }
@@ -67,22 +67,23 @@ code{
     font-weight: bold;
 }
 
-#navbar li a:hover{
-    font-weight: bold;
-    font-size: 16px;
+#navbar li:hover{
+    background-color: black;
+    color: white;
 }
 
-@media screen and (max-width:544px){
+@media(max-width: 925px){
     #navbar{
-        width: 150px
+        width: 100vw;
+        text-align: center;
+        position: relative;
+        height: auto;
     }
     #main-doc{
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 1050px){
-    #navbar header{
-        font-size: 15px;
+        width: 100vw;
+        position: relative;
+        top: 5%;
+        float: none;
+        margin: auto;
     }
 }
