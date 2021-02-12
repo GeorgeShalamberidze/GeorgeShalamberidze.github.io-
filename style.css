@@ -20,7 +20,7 @@ body{
 
 #main-doc{
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 75%;
     float: right;
 }
 
@@ -72,7 +72,7 @@ code{
     color: white;
 }
 
-@media(max-width: 925px){
+@media(max-width: 1105px){
     #navbar{
         width: 100vw;
         text-align: center;
